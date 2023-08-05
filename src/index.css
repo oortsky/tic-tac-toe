@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*  */
+#root {
+  @apply font-poppins;
+}
+
+/* Container Center */
+.container {
+  @apply w-full flex flex-col justify-center mt-16 items-center;
+}
+
+/* Status Wrap */
+.status {
+  @apply flex gap-x-6 flex-wrap;
+}
+/* Indicator */
+.x {
+  @apply w-10 h-10 flex justify-center items-center text-3xl bg-red-600 rounded shadow-lg text-white font-semibold;
+}
+.o {
+  @apply w-10 h-10 flex justify-center items-center text-3xl bg-blue-600 rounded shadow-lg text-white font-semibold transition duration-300 ease-in-out;
+}
+/* Indicator Inactive */
+.inactive {
+  @apply grayscale opacity-50;
+}
+/* Undo Button */
+.btn-undo {
+  @apply border-2 border-black text-base font-semibold px-3 shadow-lg rounded;
+}
+
+/* Board */
+.board {
+  @apply flex flex-wrap w-[244px] border-2 border-black relative m-5 bg-slate-100 shadow-lg rounded;
+}
+
+/* Squares */
+.square {
+  @apply w-[80px] h-[80px] border-2 border-black text-black text-6xl font-semibold;
+}
+
+/* Winner Box */
+.show {
+  @apply bg-yellow-400 absolute text-white font-semibold top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] rounded px-3 py-1 text-base shadow-lg;
+}
+
+/* Logo */
+.logo {
+  @apply w-9;
+}
